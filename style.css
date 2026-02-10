@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    margin: 0;
+    color: white;
+}
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 450px;
+}
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+.timer-display {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    font-family: monospace;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.controls button {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.8rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: white;
+    color: #2575fc;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.controls button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+.status {
+    margin-top: 1.8rem;
+    font-size: 1.3rem;
+    min-height: 1.8rem;
+    font-weight: 500;
+}
+.footer {
+    margin-top: 2.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1.2rem;
+}
